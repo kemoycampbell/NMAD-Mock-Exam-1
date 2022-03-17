@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/cypher/.dotnet/store/|arch|/|tfm|",
+      "/home/cypher/.nuget/packages"
+    ]
+  }
+}

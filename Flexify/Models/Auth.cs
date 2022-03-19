@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Flexify.Models
 {
-    [Table("auth")]
+    [Table("authentication")]
     public class Auth
     {
         [Key]

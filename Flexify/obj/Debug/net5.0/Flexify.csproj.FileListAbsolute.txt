@@ -33,3 +33,5 @@
 /home/cypher/Documents/NMAD262-2215-sample-code/REST_API/c-sharp/Flexify/Flexify/obj/Debug/net5.0/Flexify.pdb
 /home/cypher/Documents/NMAD262-2215-sample-code/REST_API/c-sharp/Flexify/Flexify/obj/Debug/net5.0/Flexify.genruntimeconfig.cache
 /home/cypher/Documents/NMAD262-2215-sample-code/REST_API/c-sharp/Flexify/Flexify/obj/Debug/net5.0/ref/Flexify.dll
+/home/cypher/Documents/NMAD262-2215-sample-code/REST_API/c-sharp/Flexify/Flexify/bin/Debug/net5.0/nlog.config
+/home/cypher/Documents/NMAD262-2215-sample-code/REST_API/c-sharp/Flexify/Flexify/bin/Debug/net5.0/NLog.dll

@@ -2,7 +2,7 @@ namespace Flexify.Models
 {
     public class Rating
     {
-        public string Title;
-        public string Rate;
+        public string Title { get; set; }
+        public string Rate { get; set; }
     }
 }

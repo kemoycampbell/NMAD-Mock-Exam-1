@@ -22,7 +22,7 @@ namespace Flexify.Repositories
                 throw new UserException("film cannot be empty");
 
             if (film.Title == "")
-                throw new Exception("title cannot be empty");
+                throw new UserException("title cannot be empty");
             
             //the other properties has not been validated, it has been left up to you
             
@@ -81,6 +81,7 @@ namespace Flexify.Repositories
         public async Task<Rating> GetMovieRating(string id)
         {
             Film film = await Get(id);
+
             return new Rating() {Title = film.Title, Rate = film.Rating};
 
         }
@@ -89,7 +90,11 @@ namespace Flexify.Repositories
         {
             //lower the tile so it is easy to compare
             title = title.ToLower();
-            return await _database.Films.Where(film => film.Title.ToLower().Contains(title)).ToListAsync();
+            return await _database.Films // everything we do it working within the Films collection
+                .Where(film => // "Where" implies we are searching through the collection
+                film.Title.ToLower() // On each film in the collection we return inside this "Where"a toLower version of title
+                .Contains(title)) // Check to see if each toLower title contains the title passed via the parameters
+                .ToListAsync(); // Take the results and make it into a list of possible matches
         }
     }
 }

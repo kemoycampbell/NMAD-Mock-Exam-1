@@ -1,8 +1,10 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/cypher/.dotnet/store/|arch|/|tfm|",
-      "/home/cypher/.nuget/packages"
+      "C:\\Users\\Hector\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Hector\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+      "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
     ]
   }
 }

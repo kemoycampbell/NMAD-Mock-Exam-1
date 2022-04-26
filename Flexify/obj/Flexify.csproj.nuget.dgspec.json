@@ -1,25 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/home/cypher/Documents/NMAD262-2215-sample-code/REST_API/c-sharp/Flexify/Flexify/Flexify.csproj": {}
+    "C:\\Users\\Hector\\OneDrive\\Documents\\WebandDataStorage\\MockExam\\Flexify\\Flexify.csproj": {}
   },
   "projects": {
-    "/home/cypher/Documents/NMAD262-2215-sample-code/REST_API/c-sharp/Flexify/Flexify/Flexify.csproj": {
+    "C:\\Users\\Hector\\OneDrive\\Documents\\WebandDataStorage\\MockExam\\Flexify\\Flexify.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cypher/Documents/NMAD262-2215-sample-code/REST_API/c-sharp/Flexify/Flexify/Flexify.csproj",
+        "projectUniqueName": "C:\\Users\\Hector\\OneDrive\\Documents\\WebandDataStorage\\MockExam\\Flexify\\Flexify.csproj",
         "projectName": "Flexify",
-        "projectPath": "/home/cypher/Documents/NMAD262-2215-sample-code/REST_API/c-sharp/Flexify/Flexify/Flexify.csproj",
-        "packagesPath": "/home/cypher/.nuget/packages/",
-        "outputPath": "/home/cypher/Documents/NMAD262-2215-sample-code/REST_API/c-sharp/Flexify/Flexify/obj/",
+        "projectPath": "C:\\Users\\Hector\\OneDrive\\Documents\\WebandDataStorage\\MockExam\\Flexify\\Flexify.csproj",
+        "packagesPath": "C:\\Users\\Hector\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hector\\OneDrive\\Documents\\WebandDataStorage\\MockExam\\Flexify\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/home/cypher/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Hector\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

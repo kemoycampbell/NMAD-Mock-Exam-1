@@ -54,8 +54,6 @@ namespace Flexify.Services
             context.Response.ContentType = "application/json";
             string errorString = JsonSerializer.Serialize(new {Message = message, StatusCode = statusCode});
             await context.Response.WriteAsync(errorString);
-
         }
-
     }
 }

@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using Flexify.Models;
 using Flexify.Repositories;
+using Flexify.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,10 +13,12 @@ namespace Flexify.Controllers
     public class FilmController : ControllerBase
     {
         private readonly IFilmRepository _repository;
+        private readonly UploadImageService _imgService;
 
-        public FilmController(IFilmRepository repository)
+        public FilmController(IFilmRepository repository, UploadImageService imgService)
         {
             _repository = repository;
+            _imgService = imgService;
         }
         [HttpGet]
         public async Task<IActionResult> AllFilms()
@@ -64,6 +67,17 @@ namespace Flexify.Controllers
         public async Task<IActionResult> Create(Film film)
         {
             return Ok(await _repository.Create(film));
+        }
+
+        [AllowAnonymous]
+        [HttpPost("upload")]
+        public async Task<IActionResult> Upload(Image image)
+        {
+            if (_imgService.upload(image))
+            {
+                return Ok(new {status = 200, msg = "Image was successful uploaded"});
+            } 
+            return Ok(new {status = 400, msg = "Unable to upload image"});
         }
     }
 }

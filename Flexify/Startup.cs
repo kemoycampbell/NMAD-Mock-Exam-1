@@ -39,6 +39,7 @@ namespace Flexify
             services.AddSingleton<ILoggerManager, LoggerManager>();
             services.AddScoped<IFilmRepository, FilmRepository>();
             services.AddTransient<IAuthenticationRepository, APIRepository>();
+            services.AddScoped<UploadImageService>();
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Flexify", Version = "v1"}); });
         }

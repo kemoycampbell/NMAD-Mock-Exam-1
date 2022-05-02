@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using Flexify.Exceptions;
 using Flexify.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +15,10 @@ namespace Flexify.Repositories
         }
         public async Task<Auth> Authenticate(string key)
         {
-            return await _auths.FirstOrDefaultAsync(auth => auth.ApiKey == key);
+            Auth authenticated = await _auths.FirstOrDefaultAsync(auth => auth.ApiKey == key);
+            if(authenticated is null)
+                throw new UserException("Invalid API key supplied", 401);
+            return authenticated;
         }
     }
 }

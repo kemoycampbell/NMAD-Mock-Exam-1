@@ -3,6 +3,7 @@ using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using Flexify.Exceptions;
 using Flexify.Models;
 using Flexify.Repositories;
 using Microsoft.AspNetCore.Authentication;
@@ -37,14 +38,14 @@ namespace Flexify.Services
 
             //Authorization: <auth scheme> : <auth string>
             if (!Request.Headers.ContainsKey("Authorization"))
-                throw new Exception("Authorization header required!");
+                throw new UserException("Authorization header required!", 401);
 
             AuthenticationHeaderValue authorizationHeader = AuthenticationHeaderValue.Parse(Request.Headers["Authorization"]);
             string key = authorizationHeader.Parameter;
 
             Auth auth = await _repository.Authenticate(key);
             if(auth is null)
-                throw new Exception("Invalid API key supplied");
+                throw new UserException("Invalid API key supplied", 401);
             
 
 
@@ -71,12 +72,12 @@ namespace Flexify.Services
 
         protected override Task HandleChallengeAsync(AuthenticationProperties properties)
         {
-            throw new Exception("401 unauthorized");
+            throw new UserException("Unauthorized access", 401);
         }
 
         protected override Task HandleForbiddenAsync(AuthenticationProperties properties)
         {
-            throw new Exception("403 forbidden access");
+            throw new UserException("Forbidden access", 403);
         }
     }
 }

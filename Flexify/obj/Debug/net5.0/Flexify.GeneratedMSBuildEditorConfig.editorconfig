@@ -7,4 +7,8 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Flexify
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\xamarin_2355\Documents\GitHub\NMAD-Mock-Exam-1\Flexify\
+=======
+build_property.ProjectDir = c:\users\hector\onedrive\documents\webanddatastorage\mockexam\Flexify\
+>>>>>>> 857927bab6a0471bf3f8a43a41b5dfde3b85df83

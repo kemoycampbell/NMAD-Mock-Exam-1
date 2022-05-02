@@ -1,0 +1,14 @@
+Error 2022-03-19 17:35:34.0378 Flexify.Services.LoggerManager Table 'flexify.Auths' doesn't exist
+Error 2022-03-19 17:39:45.4287 Flexify.Services.LoggerManager Table 'flexify.Auths' doesn't exist AsyncMethodBuilderCore.Start => <HandleExceptionAsync>d__4.MoveNext => LoggerManager.Error 
+Info 2022-03-19 17:52:23.0141 Flexify.Services.LoggerManager GET- /api/films/s1/ratings AsyncMethodBuilderCore.Start => <InvokeAsync>d__3.MoveNext => LoggerManager.Info 
+<<<<<<< HEAD
+Info 2022-04-05 13:04:42.8510 Flexify.Services.LoggerManager POST- /api/films/upload AsyncMethodBuilderCore.Start => <InvokeAsync>d__3.MoveNext => LoggerManager.Info 
+Info 2022-04-05 13:07:00.1766 Flexify.Services.LoggerManager POST- /api/films/upload AsyncMethodBuilderCore.Start => <InvokeAsync>d__3.MoveNext => LoggerManager.Info 
+=======
+Info 2022-04-21 11:54:38.7699 Flexify.Services.LoggerManager GET- / AsyncMethodBuilderCore.Start => <InvokeAsync>d__3.MoveNext => LoggerManager.Info 
+Info 2022-04-21 11:54:40.0865 Flexify.Services.LoggerManager GET- /favicon.ico AsyncMethodBuilderCore.Start => <InvokeAsync>d__3.MoveNext => LoggerManager.Info 
+Info 2022-04-21 11:55:30.3894 Flexify.Services.LoggerManager GET- / AsyncMethodBuilderCore.Start => <InvokeAsync>d__3.MoveNext => LoggerManager.Info 
+Info 2022-04-21 11:56:32.8388 Flexify.Services.LoggerManager GET- /api/films AsyncMethodBuilderCore.Start => <InvokeAsync>d__3.MoveNext => LoggerManager.Info 
+Info 2022-04-24 09:34:17.6962 Flexify.Services.LoggerManager GET- / AsyncMethodBuilderCore.Start => <InvokeAsync>d__3.MoveNext => LoggerManager.Info 
+Info 2022-04-24 09:34:18.1938 Flexify.Services.LoggerManager GET- /favicon.ico AsyncMethodBuilderCore.Start => <InvokeAsync>d__3.MoveNext => LoggerManager.Info 
+>>>>>>> 459bee7986c92fb8ee7bac10ff794e6deb774207
